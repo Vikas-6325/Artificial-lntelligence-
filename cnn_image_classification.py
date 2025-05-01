@@ -27,7 +27,7 @@ testloader = DataLoader(testset, batch_size=64, shuffle=False, num_workers=2)
 classes = ('plane', 'car', 'bird', 'cat', 'deer',
            'dog', 'frog', 'horse', 'ship', 'truck')
 
-# Define CNN architecture
+# Define CNN architecture.
 class CNN(nn.Module):
     def __init__(self):
         super(CNN, self).__init__()
