@@ -13,7 +13,7 @@ print(df.head(), "\n")
 print("Dataset description:")
 print(df.describe(), "\n")
 
-# Select target variable by analyzing correlation: compute the absolute correlation matrix
+# Select target variable by analyzing correlation: compute the absolute correlation matrix.
 corr_matrix = df.corr().abs()
 print("Correlation matrix:\n", corr_matrix, "\n")
 
