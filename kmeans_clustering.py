@@ -45,7 +45,7 @@ pca_result = pca.fit_transform(scaled_data)
 df['PCA1'] = pca_result[:, 0]
 df['PCA2'] = pca_result[:, 1]
 
-# Visualize clusters
+# Visualize clusters.
 plt.figure(figsize=(8, 6))
 for cluster in range(k):
     plt.scatter(df[df['Cluster'] == cluster]['PCA1'], 
